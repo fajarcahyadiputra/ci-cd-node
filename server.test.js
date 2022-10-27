@@ -28,5 +28,12 @@ it('Call the /hello/:name endpoint', async done => {
     done()
 })
   
+it('Call the /profil/:nama endpoint', async done => {
+    const res = await request.get('/profil/asep')
+    expect(res.status).toBe(200)
+    // expect(res.body.message).toBe('Hello asep')
+    done()
+})
+  
 
   
